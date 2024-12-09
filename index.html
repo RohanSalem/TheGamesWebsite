@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unblocked Games</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        header {
+            background-color: #1e1e1e;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            color: #00ff7f;
+        }
+        nav {
+            background-color: #1e1e1e;
+            padding: 10px;
+            text-align: center;
+        }
+        nav button {
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #00ff7f;
+            color: #121212;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        nav button:hover {
+            background-color: #ff4500;
+        }
+        iframe {
+            flex: 1;
+            width: 100%;
+            border: none;
+        }
+        footer {
+            background-color: #1e1e1e;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Unblocked Games Hub</h1>
+    </header>
+    <nav>
+        <!-- Add buttons for your games -->
+        <button onclick="openGame('game1.html')">Game 1</button>
+        <button onclick="openGame('game2.html')">Game 2</button>
+        <button onclick="openGame('game3.html')">Game 3</button>
+        <button onclick="openGame('game4.html')">Game 4</button>
+        <button onclick="openGame('game5.html')">Game 5</button>
+    </nav>
+    <iframe id="gameFrame" src=""></iframe>
+    <footer>
+        <p>© 2024 Unblocked Games. Enjoy responsibly!</p>
+    </footer>
+
+    <script>
+        function openGame(gameUrl) {
+            document.getElementById('gameFrame').src = gameUrl;
+        }
+    </script>
+</body>
+</html>
